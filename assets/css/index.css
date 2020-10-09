@@ -1,0 +1,251 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+/*Mobile design*/
+@media screen and (max-width: 640px) {
+    .nav-desktop{
+        display: none;
+    }
+    /*Header*/
+    .container-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    .container-logo a{
+        color: #0065FC;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    /*Navbar*/
+    .navbar{
+        margin-bottom: 20px;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar li{
+        width: 50%;
+        text-align: center;
+        border-bottom: solid 2px;
+        padding-bottom: 15px;
+    }
+    .navbar li:hover{
+        border-bottom: solid 2px #0065FC;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: black;
+        /*font-weight: bold;*/
+    }
+    .navbar a:hover{
+        color: #0065FC;
+    }
+    /*Container Search and Filters*/
+    .container-search-filters{
+        padding: 20px 20px;
+    }
+    .container-search-filters h2{
+        font-size: 20px;
+        font-weight: bold;
+        word-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .container-search-filters p{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .search-form{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .search-form input{
+        padding-left: 20px;
+        color: black;
+        font-weight: bold;
+        width: 70%;
+        border: solid 1px #F2F2F2;
+    }
+    .fas{
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .fa-map-marker-alt{
+        background-color: #F2F2F2;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px 0 0 20px;
+    }
+    .fa-search{
+        background-color: #0065FC;
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        position: absolute;
+        right: 30px;
+    }
+    /*Filter container*/
+    .filters{
+        margin-bottom: 30px;
+    }
+    .filters h2{
+        margin-bottom: 15px;
+    }
+    .filter-item-group{
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-item{
+        display: flex;
+        border: solid 2px #F2F2F2;
+        border-radius: 40px;
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+    .filter-item p{
+        margin-bottom: 0;
+    }
+    .filter-item i{
+        background-color: #DEEBFF;
+        color: #0065FC;;
+        font-size: 30px;
+        padding: 12px 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .fa-child{
+        background-color: #DEEBFF;
+        color: #0065FC;;
+        font-size: 30px;
+        padding: 10px 13px !important;
+        border-radius: 50%;
+    }
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .infos p{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .fa-info-circle{
+        background-color: white;
+        color: #0065FC;
+        margin-right: 20px;
+    }
+    /*The most popular container*/
+    .container-popular{
+        background-color: #F2F2F2;
+        padding: 40px 20px;
+    }
+    .popular-item{
+        background-color: white;
+        display: flex;
+        padding: 5px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
+    }
+    .popular-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .popular-title h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .popular-title i{
+        font-size: 30px;
+    }
+    .popular-item img{
+        width: 130px;
+        height: 130px;
+        border-radius: 20px 0 0 20px;
+        margin-right: 20px;
+    }
+    .popular-item h3{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .popular-item p{
+        margin-bottom: 40px;
+    }
+    .popular-note{
+        display: flex;
+        color: #0065FC;
+    }
+    .popular-note ul{
+        display: flex;
+    }
+    .star li:last-child{
+    color: #DEEBFF;
+    }
+    /*Accomodation container*/
+    .container-accomodation{
+        padding: 40px 20px;
+    }
+    .container-accomodation h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .accomodaton-item{
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
+        margin-bottom: 10px;
+    }
+    .accomodation-bg{
+        height: 110px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 10px;
+    }
+    .cannebiere{
+        background-image: url("../../assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    }
+    .port{
+        background-image: url("../../assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    }
+    .mouettes{
+        background-image: url("../../assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    }
+    .mer{
+        background-image: url("../../assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    }
+    .panier{
+        background-image: url("../../assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    }
+    .amina{
+        background-image: url("../../assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    }
+    .accomodaton-item h3, p{
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .accomodation-notation{
+        padding-left: 10px;
+        color: #0065FC;
+    }
+    .accomodation-notation ul{
+        display: flex;
+    }
+    .onestar li:last-child{
+        color: #DEEBFF;
+    }
+    .twosar li:nth-child(1n+4){
+        color: #DEEBFF;
+
+    }
+}
