@@ -43,6 +43,7 @@
             </nav>
         </div>
     </header>
+<!--    Search container-->
     <section class="container-search-filters">
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
@@ -51,11 +52,12 @@
                     <i class="fas fa-map-marker-alt"></i>
                     <label for="search"></label>
                     <input type="search" class="search-input" id="search" placeholder="Marseille, France">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search" onclick="color()"></i>
             </form>
         </div>
+<!--        Filter container-->
         <div class="filters">
-            <h2>Filtres</h2>
+            <h2 id="h2">Filtres</h2>
             <div>
                 <div class="filter-item-group">
                     <div class="filter-item">
@@ -82,6 +84,7 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
+<!--    Most popular container-->
     <section class="container-popular">
         <div class="popular-title">
             <h2>Les plus populaires</h2>
@@ -169,6 +172,7 @@
             </div>
         </div>
     </section>
+<!--    Accomodation container-->
     <section class="container-accomodation" id="accommodation">
         <h2>Hébergement à Marseille</h2>
         <div class="accomodaton-item">
@@ -329,6 +333,82 @@
                 </div>
             </div>
         </div>
+        <aside>
+            <a href="#">Afficher plus</a>
+        </aside>
     </section>
+<!--    Activity container-->
+    <section class="container-activity">
+        <h2>Hébergement à Marseille</h2>
+        <div class="activity-item">
+            <div class="activity-bg port"></div>
+            <div class="activity-title">
+                <h3>Vieux Port</h3>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-bg pomègues"></div>
+            <div class="activity-title">
+                <h3>Fort de Pomègues</h3>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-bg frioul"></div>
+            <div class="activity-title">
+                <h3>Île du Frioul</h3>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-bg calanques"></div>
+            <div class="activity-title">
+                <h3>Parc National des Calanques</h3>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-bg garde"></div>
+            <div class="activity-title">
+                <h3>Notre-Dame-de-la-Garde</h3>
+            </div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-bg longchamp"></div>
+            <div class="activity-title">
+                <h3>Parc Longchamp</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>A propos</h3>
+        <ul>
+            <li>
+                <a href="#">Fonctionnement du site</a>
+            </li>
+            <li>
+                <a href="#">Conditions générales de vente</a>
+            </li>
+            <li>
+                <a href="#">Données et confidentialité</a>
+            </li>
+        </ul>
+        <h3>Nos hébergements</h3>
+        <ul>
+            <li>
+                <a href="#">Charte qualité</a>
+            </li>
+            <li>
+                <a href="#">Soumettre votre hôtel</a>
+            </li>
+        </ul>
+        <h3>Assistance</h3>
+        <ul>
+            <li>
+                <a href="#">Charte qualité</a>
+            </li>
+            <li>
+                <a href="#">Soumettre votre hôtel</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="fun.js"></script>
 </body>
 </html>
