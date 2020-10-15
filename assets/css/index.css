@@ -59,6 +59,9 @@ body{
         display: flex;
         align-items: center;
     }
+    .search-form-desktop{
+        display: none;
+    }
     .search-form{
         display: flex;
         margin-bottom: 20px;
@@ -130,6 +133,12 @@ body{
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+    }
+    .infos li{
+        display: none;
+    }
+    .infos li:last-child{
+        display: block;
     }
     .infos p{
         font-size: 15px;
@@ -317,5 +326,146 @@ body{
     }
     footer li{
         margin-bottom: 20px;
+    }
+}
+/*Desktop design*/
+@media screen and (min-width: 1024px) {
+    .container-logo{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav-desktop{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+    nav li{
+        margin-right: 60px;
+        width: 50%;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .subscription{
+        font-weight: bold;
+    }
+    .subscription a{
+        color: #0065FC;
+    }
+    .container-search-filters{
+        padding: 0 50px;
+    }
+    .container-search-filters h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .container-search-filters p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .search-form{
+        display: none;
+    }
+    .search-form-desktop{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .search-form-desktop i{
+        height: 50px;
+        width: 50px;
+        background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 0 0 20px;
+    }
+    .search-input{
+        height: 50px;
+        width: 230px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .submit-btn{
+        background-color: #0065FC;
+        color: white;
+        height: 50px;
+        border: solid 0;
+        margin-left: -10px;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
+    }
+    .filters{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .filters h2{
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+    .filters div{
+        display: flex;
+        margin-right: 20px;
+    }
+    .filter-item{
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 0;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px;
+    }
+    .filter-item p{
+        margin-bottom: 0;
+    }
+    .filters i{
+        background-color: #DEEBFF;
+        margin-right: 25px;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .infos{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .infos li{
+        color: #0065FC;
+        margin-right: 10px;
+    }
+    .infos li:last-child{
+        display: none;
+    }
+    .infos i{
+        padding: 10px 15px;
+        border: solid 1px #F2F2F2;
+        border-radius: 50%;
+    }
+    .infos p{
+        margin-bottom: 0;
+    }
+    .container-popular-accomodation{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .container-popular{
+        background-color: red;
+    }
+    .container-accomodation{
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
