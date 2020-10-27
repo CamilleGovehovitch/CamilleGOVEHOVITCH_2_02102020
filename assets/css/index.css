@@ -19,10 +19,16 @@ body{
 .filter-item{
     transition: all 400ms ease-in-out;
 }
+.filter-item i{
+    transition: all 400ms ease-in-out;
+}
 .filter-item:hover{
     background-color: #0065FC;
-    border: solid 1px#F2F2F2;
-    border-collapse: collapse;
+    color: #F2F2F2;
+}
+.filter-item:hover i{
+    background-color: #0065FC;
+    color: black;
 }
 .search-form-desktop{
     display: flex;
