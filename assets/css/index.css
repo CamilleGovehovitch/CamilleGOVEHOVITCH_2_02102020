@@ -1659,7 +1659,7 @@ body{
         background-color: #F2F2F2;
         display: flex;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 300px 50px 50px;
     }
     .footer-item h3{
         font-size: 15px;
@@ -2002,7 +2002,7 @@ body{
         background-color: #F2F2F2;
         display: flex;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 300px 50px 50px;
     }
     .footer-item h3{
         font-size: 15px;
