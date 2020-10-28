@@ -28,7 +28,8 @@ body{
 }
 .filter-item:hover i{
     background-color: #0065FC;
-    color: black;
+    color: #F2F2F2;
+    border-right: solid 1px #F2F2F2;
 }
 .search-form-desktop{
     display: flex;
