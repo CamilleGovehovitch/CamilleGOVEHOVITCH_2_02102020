@@ -83,6 +83,10 @@ body{
 .star li:last-child{
     color: #DEEBFF;
 }
+.accomodaton-item{
+    box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
+}
+
 /*Mobile design*/
 @media screen and (min-width: 320px) and (max-width: 640px) {
     .nav-desktop{
@@ -285,7 +289,6 @@ body{
     .accomodaton-item{
         padding: 5px;
         border-radius: 20px;
-        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
         margin-bottom: 10px;
     }
     .accomodation-bg{
@@ -576,7 +579,6 @@ body{
     .accomodaton-item{
         padding: 5px;
         border-radius: 20px;
-        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
         margin-bottom: 10px;
     }
     .accomodation-bg{
@@ -852,6 +854,7 @@ body{
     }
     .accomodation-bg{
         height: 110px;
+        width: 140px;
         background-size: cover;
         background-position: center;
         border-radius: 20px 20px 0 0;
@@ -863,34 +866,18 @@ body{
         margin-right: 30px;
         margin-bottom: 30px;
         border-radius: 20px;
-        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
     }
-    .accomodation-notation ul{
-        display: flex;
-    }
-    .accomodation-content span{
-        font-weight: bold;
-        font-size: 10px;
-        padding-left: 10px;
+    .accomodation-content li{
         margin-bottom: 10px;
+        font-size: 10px;
     }
-    /*.accomodation-content p{*/
-    /*    margin-bottom: 10px;*/
-    /*    font-size: 10px;*/
-    /*    font-weight: 300;*/
-    /*}*/
     .accomodation-content li:last-child{
         font-weight: 300;
     }
     .accomodation-notation ul{
+        display: flex;
         color: #0065FC;
     }
-    /*.onestar li:last-child{*/
-    /*    color: #F2F2F2;*/
-    /*}*/
-    /*.twosar li:nth-child(1n+4){*/
-    /*    color: #F2F2F2;*/
-    /*}*/
     .container-accomodation a{
         color: black;
         font-weight: bold;
@@ -1204,7 +1191,6 @@ body{
         margin-right: 30px;
         margin-bottom: 30px;
         border-radius: 20px;
-        box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
     }
     .accomodation-notation ul{
         display: flex;
