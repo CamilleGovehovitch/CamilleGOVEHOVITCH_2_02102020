@@ -16,6 +16,18 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+.container-search-filters h1{
+    font-weight: bold;
+}
+.filters{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.filters span{
+    font-weight: bold;
+    margin-right: 30px;
+}
 .filter-item{
     transition: all 400ms ease-in-out;
 }
@@ -31,9 +43,26 @@ body{
     color: #F2F2F2;
     border-right: solid 1px #F2F2F2;
 }
+.filter-item p{
+    font-weight: bold;
+}
+.infos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
 .search-form-desktop{
     display: flex;
     margin-bottom: 30px;
+}
+.accomodaton-item{
+    box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
+}
+.popular-title h2{
+    font-weight: bold;
+}
+.popular-item h3{
+    font-weight: bold;
 }
 .cannebiere{
     background-image: url("../../assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -83,10 +112,16 @@ body{
 .star li:last-child{
     color: #DEEBFF;
 }
-.accomodaton-item{
-    box-shadow: 6px 5px 20px -1px rgba(0,0,0,0.4);
+.fa-map-marker-alt {
+    background-color: #F2F2F2;
 }
-
+.fa-search{
+    background-color: #0065FC;
+}
+.search-form-desktop i{
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+}
 /*Mobile design*/
 @media screen and (min-width: 320px) and (max-width: 640px) {
     .nav-desktop{
@@ -126,7 +161,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 20px;
-        font-weight: bold;
         word-spacing: 2px;
         margin-bottom: 20px;
     }
@@ -157,13 +191,11 @@ body{
         font-size: 20px;
     }
     .fa-map-marker-alt{
-        background-color: #F2F2F2;
         width: 50px;
         height: 50px;
         border-radius: 20px 0 0 20px;
     }
     .fa-search{
-        background-color: #0065FC;
         width: 50px;
         height: 50px;
         border-radius: 0 20px 20px 0;
@@ -171,11 +203,15 @@ body{
     }
     /*Filter container*/
     .filters{
-        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .filters span{
-        font-weight: bold;
         margin-bottom: 15px;
+    }
+    .filter-content{
+        display: flex;
+        flex-direction: column;
     }
     .filter-item-group{
         display: flex;
@@ -210,8 +246,6 @@ body{
     }
     /*infos*/
     .infos{
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 20px;
     }
     .infos li{
@@ -250,7 +284,6 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-title i{
         font-size: 30px;
@@ -263,7 +296,6 @@ body{
     }
     .popular-item h3{
         font-size: 15px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .popular-note{
@@ -318,12 +350,6 @@ body{
     .accomodation-content li:first-child{
         font-weight: bold;
     }
-    /*.onestar li:last-child{*/
-    /*    color: #DEEBFF;*/
-    /*}*/
-    /*.twosar li:nth-child(1n+4){*/
-    /*    color: #DEEBFF;*/
-    /*}*/
     .container-accomodation aside{
         margin-top: 40px;
         font-size: 20px;
@@ -413,6 +439,9 @@ body{
         text-decoration: none;
         color: black;
     }
+    nav a:hover{
+        color: #0065FC;
+    }
     nav span{
         font-weight: bold;
     }
@@ -425,7 +454,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 20px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .container-search-filters p{
@@ -455,25 +483,14 @@ body{
         font-size: 20px;
     }
     .fa-map-marker-alt{
-        background-color: #F2F2F2;
         width: 50px;
         height: 50px;
         border-radius: 20px 0 0 20px;
     }
     .fa-search{
-        background-color: #0065FC;
         width: 50px;
         height: 50px;
         border-radius: 0 20px 20px 0;
-    }
-    .filters{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-    .filters span{
-        font-weight: bold;
-        margin-right: 30px;
     }
     .filters div{
         display: flex;
@@ -488,7 +505,6 @@ body{
     }
     .filter-item p{
         font-size: 10px;
-        font-weight: bold;
         margin-bottom: 0;
     }
     .filters i{
@@ -498,11 +514,6 @@ body{
         border-radius: 50%;
     }
     /*infos container*/
-    .infos{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .infos li{
         color: #0065FC;
         margin-right: 10px;
@@ -538,7 +549,6 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-title i{
         font-size: 30px;
@@ -551,7 +561,6 @@ body{
     }
     .popular-item h3{
         font-size: 15px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .popular-item p{
@@ -564,9 +573,11 @@ body{
     .popular-note ul{
         display: flex;
     }
-    /*.star li:last-child{*/
-    /*    color: #DEEBFF;*/
-    /*}*/
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     /*accomodation container*/
     .container-accomodation{
         padding: 40px 20px;
@@ -607,12 +618,6 @@ body{
     .accomodation-content li:first-child{
         font-weight: bold;
     }
-    /*.onestar li:last-child{*/
-    /*    color: #DEEBFF;*/
-    /*}*/
-    /*.twosar li:nth-child(1n+4){*/
-    /*    color: #DEEBFF;*/
-    /*}*/
     .container-accomodation aside{
         margin-top: 40px;
         font-size: 20px;
@@ -703,7 +708,6 @@ body{
     }
     nav li:hover{
         border-top: solid 1px #0065FC;
-
     }
     nav li:last-child{
         margin-right: 0;
@@ -732,7 +736,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 20px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .container-search-filters p{
@@ -750,11 +753,9 @@ body{
     .search-form-desktop i{
         height: 50px;
         width: 50px;
-        background-color: #F2F2F2;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px 0 0 20px;
     }
     .search-input{
         height: 50px;
@@ -770,14 +771,7 @@ body{
         padding: 20px;
         border-radius: 0 20px 20px 0;
     }
-    .filters{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .filters span{
-        font-weight: bold;
-        margin-right: 30px;
         margin-bottom: 0;
     }
     .filters div{
@@ -793,7 +787,6 @@ body{
     }
     .filter-item p{
         font-size: 15px;
-        font-weight: bold;
         margin-bottom: 0;
     }
     .filters i{
@@ -804,8 +797,6 @@ body{
     }
     /*infos container*/
     .infos{
-        display: flex;
-        align-items: center;
         margin-bottom: 40px;
     }
     .infos li{
@@ -898,13 +889,10 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 12px;
-        font-weight: bold;
         padding-top: 10px;
-        margin-bottom: 10px;
     }
     .popular-item p{
         margin-bottom: 20px;
@@ -916,13 +904,15 @@ body{
         border-radius: 20px 0 0 20px;
         margin-right: 20px;
     }
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     .popular-note ul{
         display: flex;
         color: #0065FC;
     }
-    /*.star li:last-child{*/
-    /*    color: #F2F2F2;*/
-    /*}*/
     /*activity container*/
     .container-activity{
         padding: 0 50px;
@@ -975,7 +965,7 @@ body{
         background-color: #F2F2F2;
         display: flex;
         justify-content: space-between;
-        padding: 50px 300px 50px 50px;
+        padding: 50px 100px 50px 50px;
     }
     .footer-item h3{
         font-size: 15px;
@@ -1046,7 +1036,6 @@ body{
         height: 100%;
         text-decoration: none;
         color: black;
-        /*padding-top: 50px;*/
         font-weight: bold;
         margin-right: 0;
     }
@@ -1059,7 +1048,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 20px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .container-search-filters p{
@@ -1077,11 +1065,9 @@ body{
     .search-form-desktop i{
         height: 50px;
         width: 50px;
-        background-color: #F2F2F2;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px 0 0 20px;
     }
     .search-input{
         height: 50px;
@@ -1097,15 +1083,8 @@ body{
         padding: 20px 30px;
         border-radius: 0 20px 20px 0;
     }
-    .filters{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .filters span{
         font-size: 20px;
-        font-weight: bold;
-        margin-right: 30px;
         margin-bottom: 0;
     }
     .filters div{
@@ -1120,7 +1099,6 @@ body{
         border-radius: 30px;
     }
     .filter-item p{
-        font-weight: bold;
         margin-bottom: 0;
     }
     .filters i{
@@ -1131,8 +1109,6 @@ body{
     }
     /*infos container*/
     .infos{
-        display: flex;
-        align-items: center;
         margin-bottom: 40px;
     }
     .infos li{
@@ -1233,17 +1209,19 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 12px;
-        font-weight: bold;
         padding-top: 10px;
-        margin-bottom: 10px;
     }
     .popular-item p{
         margin-bottom: 20px;
         padding-left: 0;
+    }
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .popular-item img{
         width: 130px;
@@ -1334,7 +1312,6 @@ body{
         display: none;
     }
     .nav-desktop{
-        /*height: 150px;*/
         display: flex;
         justify-content: space-between;
         padding: 0 80px 0 50px;
@@ -1350,12 +1327,10 @@ body{
         align-items: center;
     }
     nav ul{
-        /*height: 100%;*/
         display: flex;
         align-items: center;
     }
     nav li{
-        /*height: 100%;*/
         width: 50%;
         margin-right: 60px;
         padding-top: 140px;
@@ -1369,7 +1344,6 @@ body{
         border-top: none;
     }
     nav a {
-        /*padding-top: 50px;*/
         text-decoration: none;
         color: black;
         font-size: 30px;
@@ -1381,7 +1355,6 @@ body{
         height: 100%;
         text-decoration: none;
         color: black;
-        /*padding-top: 50px;*/
         font-weight: bold;
         margin-right: 0;
     }
@@ -1394,7 +1367,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 30px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .container-search-filters p{
@@ -1412,11 +1384,9 @@ body{
     .search-form-desktop i{
         height: 50px;
         width: 50px;
-        background-color: #F2F2F2;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px 0 0 20px;
     }
     .search-input{
         height: 50px;
@@ -1433,15 +1403,8 @@ body{
         border-radius: 0 20px 20px 0;
     }
     /*filters container*/
-    .filters{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .filters span{
         font-size: 30px;
-        font-weight: bold;
-        margin-right: 30px;
         margin-bottom: 0;
     }
     .filters div{
@@ -1457,7 +1420,6 @@ body{
     }
     .filter-item p{
         font-size: 20px;
-        font-weight: bold;
         margin-bottom: 0;
     }
     .filters i{
@@ -1467,11 +1429,6 @@ body{
         border-radius: 50%;
     }
     /*infos*/
-    .infos{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .infos li{
         color: #0065FC;
         margin-right: 10px;
@@ -1568,13 +1525,10 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 12px;
-        font-weight: bold;
         padding-top: 10px;
-        margin-bottom: 10px;
     }
     .popular-item p{
         margin-bottom: 20px;
@@ -1596,10 +1550,14 @@ body{
     /*the most popular container*/
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 20px;
+    }
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .popular-item img{
         width: 300px;
@@ -1683,7 +1641,6 @@ body{
         display: none;
     }
     .nav-desktop{
-        /*height: 150px;*/
         display: flex;
         justify-content: space-between;
         padding: 0 80px 0 50px;
@@ -1699,12 +1656,10 @@ body{
         align-items: center;
     }
     nav ul{
-        /*height: 100%;*/
         display: flex;
         align-items: center;
     }
     nav li{
-        /*height: 100%;*/
         width: 50%;
         margin-right: 60px;
         padding-top: 140px;
@@ -1718,7 +1673,6 @@ body{
         border-top: none;
     }
     nav a {
-        /*padding-top: 50px;*/
         text-decoration: none;
         color: black;
         font-size: 30px;
@@ -1730,7 +1684,6 @@ body{
         height: 100%;
         text-decoration: none;
         color: black;
-        /*padding-top: 50px;*/
         font-weight: bold;
         margin-right: 0;
     }
@@ -1743,7 +1696,6 @@ body{
     }
     .container-search-filters h1{
         font-size: 30px;
-        font-weight: bold;
         margin-bottom: 15px;
     }
     .container-search-filters p{
@@ -1761,11 +1713,9 @@ body{
     .search-form-desktop i{
         height: 50px;
         width: 50px;
-        background-color: #F2F2F2;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px 0 0 20px;
     }
     .search-input{
         height: 50px;
@@ -1782,15 +1732,8 @@ body{
         border-radius: 0 20px 20px 0;
     }
     /*filters container*/
-    .filters{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .filters span{
         font-size: 30px;
-        font-weight: bold;
-        margin-right: 30px;
         margin-bottom: 0;
     }
     .filters div{
@@ -1806,7 +1749,6 @@ body{
     }
     .filter-item p{
         font-size: 20px;
-        font-weight: bold;
         margin-bottom: 0;
     }
     .filters i{
@@ -1816,11 +1758,6 @@ body{
         border-radius: 50%;
     }
     /*infos*/
-    .infos{
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-    }
     .infos li{
         color: #0065FC;
         margin-right: 10px;
@@ -1856,7 +1793,9 @@ body{
         margin-right: 20px;
     }
     .container-accomodation h3{
+        font-size: 20px;
         font-weight: bold;
+        margin-bottom: 20px;
     }
     .accomodation-item-group{
         display: flex;
@@ -1917,13 +1856,15 @@ body{
     }
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 12px;
-        font-weight: bold;
         padding-top: 10px;
-        margin-bottom: 10px;
+    }
+    .popular-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .popular-item p{
         margin-bottom: 20px;
@@ -1939,7 +1880,6 @@ body{
     /*the most popular container*/
     .popular-title h2{
         font-size: 20px;
-        font-weight: bold;
     }
     .popular-item h3{
         font-size: 20px;
