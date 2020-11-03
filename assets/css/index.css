@@ -19,6 +19,9 @@ body{
 .container-search-filters h1{
     font-weight: bold;
 }
+.container-search-filters span{
+    font-size: 15px;
+}
 .filters{
     display: flex;
     align-items: center;
@@ -256,7 +259,7 @@ body{
     .infos li:last-child{
         display: block;
     }
-    .infos p{
+    .infos span{
         font-size: 15px;
         margin-bottom: 0;
     }
@@ -527,7 +530,7 @@ body{
         border-radius: 50%;
         margin-right: 10px;
     }
-    .infos p{
+    .infos span{
         margin-bottom: 0;
     }
     /*the most popular container*/
@@ -812,7 +815,7 @@ body{
         border-radius: 50%;
         margin-right: 10px;
     }
-    .infos p{
+    .infos span{
         margin-bottom: 0;
     }
     /*the most popular container and acommodation*/
@@ -1126,7 +1129,7 @@ body{
         border-radius: 50%;
         margin-right: 10px;
     }
-    .infos p{
+    .infos span{
         margin-bottom: 0;
     }
     /*the most popular container and accomodation*/
@@ -1444,7 +1447,7 @@ body{
         border-radius: 50%;
         margin-right: 10px;
     }
-    .infos p{
+    .infos span{
         margin-bottom: 0;
     }
     /*accomodation container*/
@@ -1773,7 +1776,7 @@ body{
         border-radius: 50%;
         margin-right: 10px;
     }
-    .infos p{
+    .infos span{
         margin-bottom: 0;
     }
     /*accomodation container*/
